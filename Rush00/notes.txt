@@ -1,0 +1,46 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    notes.txt                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dgerard <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/01/13 18:52:42 by dgerard           #+#    #+#              #
+#    Updated: 2018/01/13 18:52:43 by dgerard          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+strategy for the representation of the space in memory
+
+collision
+
+generation of things
+
+	>>if the location of the object is -1, -1, then it does not yet exist in the
+		gamespace
+	>>if you are trying to spawn a new enemy, then check the enemy array for an
+		object that has the location of -1, -1
+	>>if a ship is born through the randomizer, randomize the x coord, and of
+		course y = 0
+
+lazer shots
+
+	>>falcon class function that creates a new env_obj class
+	>>it then changes the values of that new class to have the symbol be a |
+		and the speed to be way faster than anything else
+
+framerate
+
+	>>30 FPS
+	>>have the movement rate of objects be determined by the number of frames
+		that go by before the object moves up a space
+	>>count the frames up to 30 and then back down to 0
+	>>modulo the count and compare with "speed" in conditional to checkif you
+		should move shit
+
+different things and their attributes
+
+	>>asteroid
+		>>color == blue
+		>>size == random, could be 1x1, 2x2, or 3x3
+		>>speed == random, could be
