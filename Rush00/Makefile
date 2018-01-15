@@ -6,18 +6,22 @@
 #    By: dgerard <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 17:24:50 by dgerard           #+#    #+#              #
-#    Updated: 2018/01/10 16:38:44 by daniella         ###   ########.fr        #
+#    Updated: 2018/01/14 16:20:57 by esterna          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTrap
+NAME = space_battle
 
 CC = clang++
 
 FLAGS = -Wall -Werror -Wextra
 
-SRCS =	main.cpp\
-		FragTrap.cpp\
+SRCS =	space_battle.cpp\
+		asteroid.class.cpp\
+		falcon.class.cpp\
+		env_obj.class.cpp\
+		game_env.class.cpp\
+		lazer.class.cpp
 
 ODIR = ofiles
 

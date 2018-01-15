@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   space_battle.cpp                                   :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgerard <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: esterna <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/13 14:56:45 by dgerard           #+#    #+#             */
-/*   Updated: 2018/01/13 14:56:46 by dgerard          ###   ########.fr       */
+/*   Created: 2018/01/14 16:26:26 by esterna           #+#    #+#             */
+/*   Updated: 2018/01/14 17:45:10 by esterna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "game_env.class.hpp"
+#include "game_env.cpp"
+#include <ncurses.h>
 
-int				main(void)
+int				main( void )
 {
-	game_env	env;
+	game_env &		player1_start;
 
-	env.curses_init();
-	return (0);
+	player1_start.game_start();
+	return 0;
 }

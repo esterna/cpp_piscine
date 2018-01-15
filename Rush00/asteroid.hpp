@@ -10,12 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ASTEROID_CLASS_HPP
-# define ASTEROID_CLASS_HPP
+#ifndef ASTEROID_HPP
+# define ASTEROID_HPP
 
-#include "env_obj.class.hpp"
-#include <iostream>
-#include <ncurses.h>
+#include "game_env.class.hpp"
 
 class	asteroid : public env_obj
 {

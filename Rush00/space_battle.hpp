@@ -10,4 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ASTEROID_HPP
+# define ASTEROID_HPP
 
+# include <ncurses.h>
+# include "env_obj.class.hpp"
+# include "game_env.class.hpp"
+
+# define MAP_X	50
+# define MAP_Y	50
+
+# endif

@@ -10,9 +10,12 @@
 #                                                                              #
 # **************************************************************************** #
 
+___PSEUDOCODE_________________________________________
+
 strategy for the representation of the space in memory
 
 collision
+	>>when there is a
 
 generation of things
 
@@ -37,10 +40,56 @@ framerate
 	>>count the frames up to 30 and then back down to 0
 	>>modulo the count and compare with "speed" in conditional to checkif you
 		should move shit
+	>>figure out exact numbers by trial and error
+
+object size
+
+	>>object size is stored in ints
+	>>each place is the size of the next row
+	>> 1 = #
+	>> 232 == ###
+			 #####
+			  ###
 
 different things and their attributes
 
+	>>colors in numbers as define by curses.h
+        COLOR_BLACK   0
+        COLOR_RED     1
+        COLOR_GREEN   2
+        COLOR_YELLOW  3
+        COLOR_BLUE    4
+        COLOR_MAGENTA 5
+        COLOR_CYAN    6
+        COLOR_WHITE   7
+	>>placeholder speeds (change to meaningful numbers later)
+		>>slow = 0
+		>>medium  = 1
+		>>med hi = 2
+		>>fast = 3
 	>>asteroid
-		>>color == blue
-		>>size == random, could be 1x1, 2x2, or 3x3
-		>>speed == random, could be
+		>>color == green
+		>>size == random, could be 1, 22, 232, 2343, 3443, 122, 23432, 34543
+		>>speed == medium
+		>>symbol == #
+	>>stars
+		>>color == blue, cyan or white
+		>>size == 1
+		>>speed == slowest
+		>>symbol == .
+	>>falcon
+		>>color == 5
+		>>size == 35
+		>>speed == med hi
+					 /V\
+		>>symbol == (___)
+	>>lazer
+		>>color == red
+		>>size == 1
+		>>speed == the fastest by far
+		>>symbol == |
+
+_____OBJECTIVES____________________________________________
+
+>>try to integrate functions into the env_obj classes. DON"T just have a bunch of
+	C structs
